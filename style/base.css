@@ -8,7 +8,7 @@ h1 {
 section {
     display: grid;
     /* border: 1px solid #415541; */
-    /* background-color: rgb(186, 247, 223); */
+    background-color: #EAEBED;
     border-radius: 10px; /* Remove the space between the value and 'px' */
     overflow: hidden;
     margin: 1rem 0; /* Correct the unit of measurement to 'rem' */
@@ -17,8 +17,28 @@ li{
     list-style: none;
 }
 nav{
-    background-color: rgb(255, 252, 162);
+    background-color: #01A7C2;
 }
 header{
-    background-color: rgb(186, 229, 245);
+    background-color: #EAEBED;
+}
+#header{
+    margin-left: auto;
+    margin-right: auto;
+}
+a{text-decoration: none;
+padding: 5px;
+margin: 5px;
+text-align: center;
+display: inline-block;
+border-radius: 10px; 
+}
+.card2{
+    display: flex;
+    position: absolute;
+    right: 10%;
+}
+.card{
+    display: flex;
+    position: absolute;;
 }
