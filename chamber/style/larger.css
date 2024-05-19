@@ -1,0 +1,32 @@
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav li {
+        margin-right: 40px;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta {
+        margin-top: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    section {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}

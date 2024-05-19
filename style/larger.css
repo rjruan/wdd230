@@ -1,4 +1,15 @@
-ul{
+header {
+    justify-content: flex-start;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.content {
     flex-direction: row;
-    justify-content: space-around;
+}
+
+section {
+    width: 30%;
 }

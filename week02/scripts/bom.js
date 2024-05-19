@@ -2,7 +2,8 @@ const input = document.querySelector("#favchap");
 const button = document.querySelector('button');
 const list = document.querySelector("#list");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+    e.preventDefault();
     if (input.value) {
         // create li element
         const li = document.createElement('li');
