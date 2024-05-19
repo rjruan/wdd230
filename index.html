@@ -9,50 +9,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25|Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/base.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
+    <link rel="stylesheet" href="./style/normalize.css"> <!-- Custom CSS normalization -->
 </head>
 <body>
     <header>
         <div class="header-content">
-            <!-- Replace the placeholder image with your photo -->
             <img src="./images/Ruby.jpg" alt="Ruby Ruan" class="profile-picture">
             <h1>Ruby Ruan</h1>
         </div>
+        <button id="dark-mode-toggle">Dark Mode</button> <!-- Dark Mode Button -->
+        <button id="hamburger-toggle" class="hamburger">&#9776;</button> <!-- Hamburger Menu Button -->
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="./images/wirefram.jpg">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="content">
-            <section class="learning-activities">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="#">Week 01: Layout | Media Query | JS Pen</a></li>
-                    <li><a href="#">Week 02:</a></li>
-                    <li><a href="#">Week 03:</a></li>
-                    <li><a href="#">Week 04:</a></li>
-                    <li><a href="#">Week 05:</a></li>
-                    <li><a href="#">Week 06:</a></li>
-                </ul>
-            </section>
-            <section class="information">
-                <h2>Information</h2>
-                <ul>
-                    <li>Weather: Sunny</li>
-                    <li>Page Visits: 100</li>
-                </ul>
-            </section>
-        </div>
+        <section class="learning-activities">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="#">Week 01:</a></li>
+                <li><a href="#">Week 02:</a></li>
+                <li><a href="#">Week 03:</a></li>
+                <li><a href="#">Week 04:</a></li>
+                <li><a href="#">Week 05:</a></li>
+                <li><a href="#">Week 06:</a></li>
+            </ul>
+        </section>
+        <section class="information">
+            <h2>Information</h2>
+            <ul>
+                <li>Weather: Sunny</li>
+                <li>Page Visits: 100</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Ruby Ruan Taiwan</p>
         <p id="lastModified">Last Modified</p>
     </footer>
     <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/hamburger.js"></script> <!-- Script for hamburger menu -->
+    <script src="./scripts/darkmode.js"></script> <!-- Script for dark mode toggle -->
 </body>
 </html>
