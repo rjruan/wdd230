@@ -1,3 +1,64 @@
+/* Normalize or reset styles */
+@import url('normalize.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    display: none;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 1rem;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -81,4 +142,11 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.heading li{
+    display: none;
+}
+.show li{
+    display: flex;
 }

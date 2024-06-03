@@ -1,0 +1,16 @@
+button{
+    margin: 1rem;
+}
+
+section{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width): 18em{
+    grid-template-columns: 1 fr 1fr 1fr;
+}
+
+@media screen and (min-width): 32em{
+    grid-template-columns: 1 fr 1fr 1fr;
+}

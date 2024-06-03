@@ -20,6 +20,8 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;
+    background-color: #3b3eee;
+    color: #fff;
 }
 
 nav li {
@@ -51,7 +53,7 @@ main {
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color: #3b3eee;
     text-align: center;
     padding: 1rem;
     border-top: 1px solid #ddd;
