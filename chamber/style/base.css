@@ -86,9 +86,14 @@ main {
     padding: 2rem;
     text-align: center;
 }
-
+.hero img{
+    width: 100%;
+    height: auto;
+}
 .cta {
-    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 45%;
     padding: 0.5rem 1rem;
     background-color: #007bff;
     color: white;
