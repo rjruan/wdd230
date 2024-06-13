@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 div{
     margin: 1em;
 }
@@ -32,7 +37,8 @@ footer {
 	background-color: #444;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
-fomr{
+form {
+	margin: 20px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -45,4 +51,45 @@ select {
 	border: 0;
 	border-bottom: 1px solid navy;
 	font-size: 1.1rem;
+}
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+input::placeholder {
+	font-size: 13px;
+}
+label {
+	color: navy;
+	font-size: 16px;
+}
+input,
+textarea,
+select {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	border-bottom: 1px solid navy;
+	font-size: 1.1rem;
+}
+@keyframes shaketext {
+	25% {
+		transform: translateX(3px);
+	}
+	50% {
+		transform: translateX(-3px);
+	}
+	75% {
+		transform: translateX(3px);
+	}
 }
