@@ -25,10 +25,11 @@ main {
 }
 
 button{
-	padding: 16px;
+	padding: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;
 	padding-bottom: 1em;
+
 }
 
 header,
@@ -82,6 +83,8 @@ select {
 	border-bottom: 1px solid navy;
 	font-size: 1.1rem;
 }
+
+
 @keyframes shaketext {
 	25% {
 		transform: translateX(3px);

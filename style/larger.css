@@ -1,15 +1,23 @@
-header {
-    justify-content: flex-start;
-}
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row; /* horizontal layout for larger screens */
+    }
 
-header h1 {
-    margin: 0;
-}
+    .content {
+        display: flex;
+        justify-content: space-between; /* space between the sections */
+        gap: 20px; /* gap between the sections */
+        margin-top: 20px;
+    }
 
-.content {
-    flex-direction: row;
-}
+    .learning-activities {
+        flex: 2; /* Twice as wide as information section */
+    }
 
+    .information {
+        flex: 1; /* Normal width */
+    }
+}
 h1{
     text-align: center;
 }
