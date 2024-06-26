@@ -1,8 +1,8 @@
 /* Styles for larger screens */
-@media screen and (min-width: 768px) {
-    /* nav ul {
-        justify-content: flex-start;
-    } */
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row; /* horizontal layout for larger screens */
+    }
 
     nav li {
         /* margin: 0 auto; */
@@ -27,7 +27,7 @@
     }
 
     section {
-        background-color: #f8f9fa;
+        /* background-color: #f8f9fa; */
         padding: 1rem;
         border-radius: 5px;
     }
