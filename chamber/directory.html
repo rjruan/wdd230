@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Ruan - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan. This portal serves as a hub for learning activities, information, and updates related to the course.">
+    <meta name="author" content="Ruby Ruan">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/Ruby.jpg" alt="Ruby Ruan" class="profile-picture">
+            <h1>Ruby Ruan</h1>
+        </div>
+        <button id="dark-mode-toggle">Dark Mode</button> <!-- Dark Mode Button -->
+        <button id="hamburger-toggle" class="hamburger">&#9776;</button> <!-- Hamburger Menu Button -->
+    </header>
+    <nav>
+        <ul class="heading">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="./images/wirefram.jpg">Site Plan</a></li>
+            <li><a href="./form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Ruby Ruan- WDD230 - Web Frontend Development</h1>
+        <hr>
+        <section class="hero">
+            <img class="hero-img" src="./images/dctemple.jpeg" alt="Hero Image">
+        </section>
+        
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> 🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/hamburger.js"></script> <!-- Script for hamburger menu -->
+    <script src="./scripts/darkmode.js"></script> <!-- Script for dark mode toggle -->
+    <script src ="./week05/script/weather.js"></script>
+</body>
+</html>
