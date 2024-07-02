@@ -21,7 +21,7 @@
     --nav-link-color: #373737;
     --nav-background-color: #FCE694;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #396E94;
+    --nav-hover-background-color: #f8f9fa;
 }
 
 .primary {
@@ -112,11 +112,11 @@ section {
 }
 
 footer {
-    background-color: #3b3eee;
+    background-color: #f8f9fa;
     text-align: center;
     padding: 1rem;
     border-top: 1px solid #ddd;
-    color: white;
+    color: black;
 }
 
 .img {
@@ -163,4 +163,42 @@ p {
     h1 {
         text-align: center;
     }
+}
+/* directory */
+/* Add this to your base.css or larger.css file */
+
+#directory {
+    display: grid;
+    gap: 1rem;
+}
+
+#directory.grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#directory.list {
+    grid-template-columns: 1fr;
+}
+
+.member {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.member h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.member p, .member a {
+    margin: 0.2rem 0;
 }
