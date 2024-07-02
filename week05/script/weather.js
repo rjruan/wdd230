@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url ='https://api.openweathermap.org/data/2.5/weather?lat=25.03356159786495&lon=121.54829991170035&appid=df761ea8c97475cb4b1b4481df9eead2&units=imperial';
+const url ='https://api.openweathermap.org/data/2.5/weather?lat=43.82409862537444&lon=-111.79367686942149&appid=df761ea8c97475cb4b1b4481df9eead2&units=imperial';
 
 async function apiFetch() {
   try {
