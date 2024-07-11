@@ -6,9 +6,16 @@
     <title>Ruby Ruan - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan. This portal serves as a hub for learning activities, information, and updates related to the course.">
     <meta name="author" content="Ruby Ruan">
+    <meta property="og:title" content="Ruby Ruan - WDD 230 - Web Frontend Development">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan.">
+    <meta property="og:image" content="./images/Ruby.webp">
+    <meta property="og:url" content="https://yourusername.github.io/wdd230">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/base.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
+    <!-- <link rel="icon" href="./images/favicon.ico" type="image/x-icon"> -->
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#000000">
 </head>
@@ -21,7 +28,7 @@
         <button id="dark-mode-toggle">Dark Mode</button> <!-- Dark Mode Button -->
         <button id="hamburger-toggle" class="hamburger">&#9776;</button> <!-- Hamburger Menu Button -->
     </header>
-    <nav>
+    <nav id="main-nav" class="hidden">
         <ul class="heading">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./chamber/index.html">Chamber</a></li>
@@ -33,7 +40,7 @@
         <h1>Ruby Ruan- WDD230 - Web Frontend Development</h1>
         <hr>
         <section class="hero">
-            <img class="hero-img" src="./images/dctemple (1).webp" alt="Hero Image" width="800" height="600" loading="lazy">
+            <img class="hero-img" src="./images/dctemple.webp" alt="Hero Image" width="800" height="600" loading="lazy">
         </section>
         <div class="content">
             <section class="learning-activities">
@@ -73,6 +80,21 @@
                 console.log('Service Worker registration failed:', error);
             });
         }
+
+        document.getElementById('hamburger-toggle').addEventListener('click', function() {
+            const nav = document.getElementById('main-nav');
+            if (nav.classList.contains('hidden')) {
+                nav.classList.remove('hidden');
+                this.innerHTML = '&times;'; // Change to 'X' symbol
+            } else {
+                nav.classList.add('hidden');
+                this.innerHTML = '&#9776;'; // Change back to hamburger symbol
+            }
+        });
+
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
     </script>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hamburger.js"></script> <!-- Script for hamburger menu -->
