@@ -25,13 +25,3 @@ self.addEventListener('install', (event) => {
     );
   });
   
-  document.getElementById('hamburger-toggle').addEventListener('click', function() {
-    const nav = document.getElementById('main-nav');
-    if (nav.classList.contains('hidden')) {
-        nav.classList.remove('hidden');
-        this.innerHTML = '&times;'; // Change to 'X' symbol
-    } else {
-        nav.classList.add('hidden');
-        this.innerHTML = '&#9776;'; // Change back to hamburger symbol
-    }
-});

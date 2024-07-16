@@ -8,7 +8,7 @@
     <meta name="author" content="Ruby Ruan">
     <meta property="og:title" content="Ruby Ruan - WDD 230 - Web Frontend Development">
     <meta property="og:description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan.">
-    <meta property="og:image" content="./images/Ruby.webp">
+    <meta property="og:image" content="https://newsroom.churchofjesuschrist.org/media/960x540/Exterior_0726.jpg">
     <meta property="og:url" content="https://rjruan.github.io/wdd230">
     <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -27,13 +27,15 @@
         <button id="dark-mode-toggle">🌞</button> <!-- Dark Mode Button -->
         <button id="hamburger-toggle" class="hamburger">&#9776;</button> <!-- Hamburger Menu Button -->
     </header>
+    <button id="menu"></button>
     <nav id="main-nav" class="hidden">
-        <ul class="heading">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./chamber/discover.html">Chamber</a></li>
-            <li><a href="./images/wirefram.jpg">Site Plan</a></li>
-            <li><a href="./form.html">Form</a></li>
-        </ul>
+        <nav class="navigation">
+            <a href="./index.html" title="Home">Home</a>
+            <a href="./chamber/discover.html" title="Chamber" class="active">Chamber</a>
+            <a href="./images/wirefram.jpg" title="Site Plan">Site Plan</a>
+            <a href="./form.html" title="form">Form</a>
+            <a href="./chamber/discover.html" title="About Us" class="us">About Us</a>
+          </nav>
     </nav>
     <main>
         <h1>Ruby Ruan- WDD230 - Web Frontend Development</h1>
@@ -70,37 +72,12 @@
         <p>&copy;<span id="year"></span> 🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
         <p id="lastModified">Last Modified</p>
     </footer>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js')
-            .then((registration) => {
-                console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch((error) => {
-                console.log('Service Worker registration failed:', error);
-            });
-        }
-
-        document.getElementById('hamburger-toggle').addEventListener('click', function() {
-            const nav = document.getElementById('main-nav');
-            if (nav.classList.contains('hidden')) {
-                nav.classList.remove('hidden');
-                this.innerHTML = '&times;'; // Change to 'X' symbol
-            } else {
-                nav.classList.add('hidden');
-                this.innerHTML = '&#9776;'; // Change back to hamburger symbol
-            }
-        });
-
-        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
-    <script src="./scripts/getDates.js"></script>
-    <script src="./scripts/hamburger.js"></script> <!-- Script for hamburger menu -->
+    <script src="./scripts/getdates.js"></script>
+    <script src="./week02/script/hamburger.js</script>
     <script src="./scripts/darkmode.js"></script> <!-- Script for dark mode toggle -->
     <script src="./week05/script/weather.js"></script>
     <script src="./scripts/links.js</script>
+    
 
 </body>
 </html>
