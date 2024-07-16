@@ -1,0 +1,58 @@
+const baseURL = "https://rjruan.github.io/wdd230/";
+const linksURL = "https://rjruan.github.io/wdd230/data/links.json";
+
+
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "../week01/holygrail.html",
+            "title": "HG Layout"
+          },
+          {
+            "url": "../week01/media-query.html",
+            "title": "mQueries"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/example1.html",
+            "title": "Example 1"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/example2.html",
+            "title": "Example 2"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/tablebuild.html",
+            "title": "Table Build"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "week05/weather.html",
+            "title": "Weather"
+          }
+        ]
+      }
+    ]
+  }
+  
