@@ -1,111 +1,60 @@
 /* Normalize or reset styles */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
-
-header {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    /* text-align: center; */
-    border-bottom: 1px solid #ddd;
-}
-
-nav ul {
-    display: none;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    margin-right: 20px;
-    display: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-main {
-    padding: 1rem;
-}
-
-.hero {
-    padding: 2rem;
-    text-align: center;
-}
-.hero-img {
-    width: 100%;
-    height: auto;
-}
-
-.cta {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 1rem;
-    border-top: 1px solid #ddd;
-}
-
-hr {
-    border: 3px dashed #3b3eee;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
     color: #333;
     background-color: beige;
 }
 
-.header-content {
-    align-items: center;
-    justify-content: center;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-.profile-picture {
-    width: 100%;
-    max-width: 150px; /* maximum width to keep the image within a reasonable size */
-    height: auto; /* maintain aspect ratio */
-    padding: 1rem;
-}
-
+/* Header Styles */
 header {
-    background-color: #ffffff;
-    padding: 10px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    flex-direction: column; /* default to column for small screens */
 }
 
+.profile-picture {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    padding: 1rem;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navigation Styles */
 nav {
     background-color: #3b3eee;
     padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -116,18 +65,30 @@ nav li {
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Hero Section */
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main Content */
 main {
     padding: 1rem;
 }
 
 .content {
     display: flex;
-    flex-direction: column; /* vertical layout by default */
+    flex-direction: column;
     justify-content: space-around;
     margin-top: 20px;
 }
@@ -135,40 +96,87 @@ main {
 section {
     padding: 1rem;
     background-color: #ebf5ff;
-    color: rgb(0, 0, 0);
+    color: #000;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
 }
 
+/* Footer Styles */
 footer {
     background-color: #3b3eee;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    /* position: fixed; */
     width: 100%;
-    bottom: 0;
 }
 
-.heading li {
-    display: none;
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
 }
 
-.show li {
+body.dark-mode .header-content {
+    background-color: #0d0d0d;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode a:hover {
+    color: #ff4081;
+}
+
+/* Hamburger Menu */
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
     display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
 }
 
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+/* Font Styles */
 .pt-serif-regular {
     font-family: "PT Serif", serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 .pt-serif-bold {
     font-family: "PT Serif", serif;
     font-weight: 700;
-    font-style: normal;
 }
 
 .pt-serif-regular-italic {
@@ -183,105 +191,22 @@ footer {
     font-style: italic;
 }
 
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-}
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-body.dark-mode .header-content {
-    background-color: #0d0d0d;
-    color: #ffffff;
-}
-
-/* Ensure links have sufficient contrast in dark mode */
-body.dark-mode a {
-    color: #bb86fc;
-}
-
-body.dark-mode a:hover {
-    color: #ff4081;
-}
-
-
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "❎";
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	color: #fff;
-}
-
-.navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
-.open a {
-	display: block;
-}
-
-
-.stuff {
-	margin: 0.5m;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-}
-
+/* Responsive Design */
 @media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+
     .hamburger {
         display: none;
     }
 
     #main-nav {
         display: block;
-    }
-}
-
-
-/* Media Queries for Responsive Design */
-@media (min-width: 768px) {
-    .header-content {
-        flex-direction: row; /* horizontal layout for larger screens */
-    }
-
-    .content {
-        flex-direction: row; /* horizontal layout for larger screens */
     }
 }
 

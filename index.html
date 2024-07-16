@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/base.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="./data/manifest.json">
     <link rel="icon" href="./week02/favicon.ico">
     <meta name="theme-color" content="#000000">
 </head>
@@ -25,13 +25,12 @@
             <h1>Ruby Ruan</h1>
         </div>
         <button id="dark-mode-toggle">🌞</button> <!-- Dark Mode Button -->
-        <button id="hamburger-toggle" class="hamburger">&#9776;</button> <!-- Hamburger Menu Button -->
     </header>
     <button id="menu"></button>
     <nav id="main-nav" class="hidden">
         <nav class="navigation">
             <a href="./index.html" title="Home">Home</a>
-            <a href="./chamber/discover.html" title="Chamber" class="active">Chamber</a>
+            <a href="./chamber/index.html" title="Chamber" class="active">Chamber</a>
             <a href="./images/wirefram.jpg" title="Site Plan">Site Plan</a>
             <a href="./form.html" title="form">Form</a>
             <a href="./chamber/discover.html" title="About Us" class="us">About Us</a>
@@ -41,14 +40,15 @@
         <h1>Ruby Ruan- WDD230 - Web Frontend Development</h1>
         <hr>
         <section class="hero">
+            <h2>Washington DC temple</h2>
             <img class="hero-img" src="./images/dctemple.webp" alt="Hero Image" width="800" height="600" loading="lazy">
         </section>
         <div class="content">
             <section class="learning-activities">
                 <h2>Learning Activities</h2>
                 <ul>
-                    <div id="activities"></div>
-                    <li><a href="#">Week 01:</a></li>
+                    <li id="activities">
+                        <a href="#">Week 01:</a></li>
                     <li><a href="#">Week 02:</a></li>
                     <li><a href="#">Week 03:</a></li>
                     <li><a href="#">Week 04:</a></li>
@@ -73,11 +73,9 @@
         <p id="lastModified">Last Modified</p>
     </footer>
     <script src="./scripts/getdates.js"></script>
-    <script src="./week02/script/hamburger.js</script>
-    <script src="./scripts/darkmode.js"></script> <!-- Script for dark mode toggle -->
+    <script src="./week02/script/hamburger.js"></script>
+    <script src="./scripts/service-worker.js"></script>
     <script src="./week05/script/weather.js"></script>
-    <script src="./scripts/links.js</script>
-    
-
+    <script src="./scripts/links.js"></script>
 </body>
 </html>
