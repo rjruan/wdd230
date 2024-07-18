@@ -6,30 +6,36 @@
     <title>Ruby Ruan - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan. This portal serves as a hub for learning activities, information, and updates related to the course.">
     <meta name="author" content="Ruby Ruan">
+    <meta property="og:title" content="Ruby Ruan - WDD 230 - Web Frontend Development">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan.">
+    <meta property="og:image" content="https://newsroom.churchofjesuschrist.org/media/960x540/Exterior_0726.jpg">
+    <meta property="og:url" content="https://rjruan.github.io/wdd230">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
-    <link rel="stylesheet" href="./style/normalize.css"> <!-- Custom CSS normalization -->
-    <link rel="stylesheet" href="./style/form.css">
     <link rel="stylesheet" href="./style/base.css">
-
-
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
+    <link rel="stylesheet" href="./style/form.css">
+    <link rel="manifest" href="./data/manifest.json">
+    <link rel="icon" href="./week02/favicon.ico">
+    <meta name="theme-color" content="#000000">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <!-- <img src="./images/Ruby.jpg" alt="Ruby Ruan" class="profile-picture"> -->
-
+            <img src="./images/Ruby.webp" alt="Ruby Ruan" class="profile-picture" width="105" height="100">
+            <h1>Ruby Ruan</h1>
         </div>
-        <button id="dark-mode-toggle">Dark Mode</button> <!-- Dark Mode Button -->
-        <button id="hamburger-toggle" class="hamburger">&#9776;</button> <!-- Hamburger Menu Button -->
+        <button id="dark-mode-toggle">🌞</button> <!-- Dark Mode Button -->
     </header>
-    <nav>
-        <ul class="heading">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./chamber/index.html">Chamber</a></li>
-            <li><a href="./images/wirefram.jpg">Site Plan</a></li>
-            <li><a href="./week04/form.html">Form</a></li>
-        </ul>
+    <button id="menu"></button>
+    <nav id="main-nav" class="hidden">
+        <nav class="navigation">
+            <a href="./index.html" title="Home">Home</a>
+            <a href="./chamber/index.html" title="Chamber" class="active">Chamber</a>
+            <a href="./images/wirefram.jpg" title="Site Plan">Site Plan</a>
+            <a href="./form.html" title="form">Form</a>
+            <a href="./chamber/discover.html" title="About Us" class="us">About Us</a>
+          </nav>
     </nav>
     <main>
         <h1>Form</h1>
@@ -60,13 +66,13 @@
     <button id="btnSubmit" src="./record.html" type="submit">Submit</button>
     <input type="hidden" value="43aster">
     <footer>
-        <p>&copy;<span id="year"></span>🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
+        <p>&copy;<span id="year"></span> 🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
         <p id="lastModified">Last Modified</p>
     </footer>
-    <script src="./scripts/getDates.js"></script>
-    <script src="./scripts/hamburger.js"></script> <!-- Script for hamburger menu -->
-    <script src="./scripts/darkmode.js"></script> <!-- Script for dark mode toggle -->
-    <script src="./scripts/rangevalue.js"></script>
-
+    <script src="./scripts/getdates.js"></script>
+    <script src="./week02/script/hamburger.js"></script>
+    <script src="./scripts/service-worker.js"></script>
+    <script src="./week05/script/weather.js"></script>
+    <script src="./scripts/links.js"></script>
 </body>
 </html>

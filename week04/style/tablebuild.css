@@ -1,6 +1,6 @@
 :root {
-	--back: black;
-    --back2: rgba(25, 25, 25, 0.713);
+	--back: rgb(0, 64, 154);
+    --back2: rgba(1, 88, 0, 0.713);
     --foredark: hsla(0,0%,10%,1);
 	--forelight: hsla(0,0%,100%,1);
 	--border: hsla(0,0%,20%,.8);
@@ -51,5 +51,5 @@ tbody tr:nth-child(odd) {
 }
 
 .td{
-    background-color: black;
+    background-color: rgb(0, 115, 13);
 }
