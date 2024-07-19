@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Home</title>
-    <meta name="description" content="Welcome to the Chamber of Commerce. Join us to engage with the community and participate in current events.">
+    <title>Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover the Chamber of Commerce. Engage with the community and explore the area.">
     <meta name="author" content="Ruby Ruan">
-    <meta property="og:title" content="Chamber of commerce- Taipei, Taiwan ">
-    <meta property="og:description" content="Chamber of commerce website- Taipei, Taiwan portal by Ruby Ruan.">
+    <meta property="og:title" content="Chamber of Commerce - Discover">
+    <meta property="og:description" content="Explore the Chamber of Commerce in Taipei, Taiwan.">
     <meta property="og:image" content="http://127.0.0.1:5500/chamber/images/Artboard%201.jpg">
-    <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/discover.html">
     <link rel="icon" href="./images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../chamber/style/base.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../chamber/style/larger.css">
+    <link rel="stylesheet" href="./style/normal.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
 </head>
 <body>
     <header>
-        <img src="../chamber/images/8690157.jpg" alt="Chamber of Commerce Logo" width="105" height="100">
+        <img src="./images/Chamberlogo.png" alt="Chamber of Commerce Logo" width="364" height="205">
         <h1>Chamber of Commerce</h1>
     </header>
     <nav>
@@ -30,14 +30,48 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        
-    </header>
+    <main>
+        <div class="container">
+            <aside>
+                <h2>Discover Our Community</h2>
+                <p id="visit-message"></p>
+                <section>
+                    <h3>Demographics</h3>
+                    <p>Population: 2.7 million</p>
+                    <p>Area: 271.8 km²</p>
+                    <p>GDP: $327 billion</p>
+                </section>
+                <section>
+                    <h3>Statistics</h3>
+                    <p>Unemployment Rate: 3.8%</p>
+                    <p>Median Income: $42,000</p>
+                    <p>Tourism Growth: 5% per year</p>
+                </section>
+                <section>
+                    <h3>Upcoming Events</h3>
+                    <p>Annual Business Summit - July 15th</p>
+                    <p>Food Festival - August 20th</p>
+                    <p>Art Expo - September 12th</p>
+                </section>
+            </aside>
+            <section class="gallery">
+                <h2>Local Attractions</h2>
+                <img data-src="./images/city.webp" alt="Attraction 1" class="lazy">
+                <img data-src="./images/freedomsquare.webp" alt="Attraction 2" class="lazy">
+                <img data-src="./images/nightmarket.webp" alt="Attraction 3" class="lazy">
+                <img data-src="./images/nine.webp" alt="Attraction 4" class="lazy">
+                <img data-src="./images/street.webp" alt="Attraction 5" class="lazy">
+                <img data-src="./images/temple.webp" alt="Attraction 6" class="lazy">
+            </section>
+        </div>
+    </main>
     <footer>
         <p>&copy;<span id="year"></span>🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
         <p id="lastModified">Last Modified</p>
     </footer>
-    <script src="./scripts/getDates.js"></script>
+    <script src="./script/getDates.js"></script>
     <script src="../week05/script/weather.js"></script>
+    <script src="./script/visitmessage.js"></script>
+    <script src="./script/lazyload.js"></script>
 </body>
 </html>

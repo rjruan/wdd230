@@ -1,3 +1,4 @@
+document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 function getmessage(){
     // get date
 let currentDate = Data.now();
