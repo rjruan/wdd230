@@ -24,4 +24,12 @@ self.addEventListener('install', (event) => {
       })
     );
   });
-  
+  document.addEventListener('DOMContentLoaded', (event) => {
+    let visitCount = localStorage.getItem('visitCount');
+    if (!visitCount) {
+        visitCount = 0;
+    }
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount);
+    document.getElementById('visit-count').innerText = visitCount;
+});

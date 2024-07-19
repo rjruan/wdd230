@@ -159,7 +159,7 @@ body.dark-mode a:hover {
 }
 
 .navigation a:hover {
-    background-color: #bbb;
+    background-color: white;
     color: #333;
     font-weight: 700;
 }
@@ -189,6 +189,69 @@ body.dark-mode a:hover {
     font-family: "PT Serif", serif;
     font-weight: 700;
     font-style: italic;
+}
+/* responsive */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 1em;
+    max-width: 960px;
+    margin: auto;
+}
+
+picture {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 28rem;
+    left: 35%;
+    border-radius: 35px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 10, 192, 0.6);
+    color: white;
+    padding: 0.5em;
+    font-size: 1.25em;
+    white-space: nowrap;
+    
+}
+
+.learning-activities, .information, .map {
+    margin-top: 2em;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.learning-activities h3, .information h3 {
+    color: #004080;
+}
+
+.information {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0.5em;
+    }
+
+    .overlay {
+        font-size: 1em;
+        padding: 0.3em;
+    }
 }
 
 /* Responsive Design */
