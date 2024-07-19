@@ -290,7 +290,7 @@ main {
     text-align: left;
 }
 aside{
-    width: 50%;
+    /* width: 50%; */
 }
 
 /* Positioning the benefits chart to the right in larger views */
