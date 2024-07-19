@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Join</title>
+    <meta name="description" content="Join the Chamber of Commerce. Apply for membership and engage with the community.">
+    <meta name="author" content="Ruby Ruan">
+    <meta property="og:title" content="Chamber of Commerce - Join">
+    <meta property="og:description" content="Apply for membership at the Chamber of Commerce in Taipei, Taiwan.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://rjruan.github.io/wdd230/chamber/join.html">
+    <link rel="icon" href="./images/favicon (1).ico">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../chamber/style/normal.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="../chamber/style/larger.css">
+</head>
+<body>
+    <header>
+        <img src="./images/chamberlogo.png" alt="Chamber of Commerce Logo" width="364" height="205">
+        <h1>Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../chamber/discover.html">Discover</a></li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
+            <li><a href="../chamber/join.html">Join Us</a></li>
+            <li><a href="../chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <form action="thankyou.html" method="get">
+                <label for="first-name">*First Name:
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+                <label for="last-name">*Last Name:
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+                <label for="title">Title/Position:
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}">
+                </label>
+                <label for="email">*Email:
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </label>
+                <label for="phone">*Mobile Phone:
+                    <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
+                </label>
+                <label for="business-name">Business/Organization Name:
+                    <input type="text" id="business-name" name="business-name" >
+                </label>
+                <label for="membership-level">Membership Level:
+                    <select id="membership-level" name="membership-level">
+                        <option value="np">NP Membership (Non-Profit) - No Fee</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit Application">
+            </form>
+            <aside>
+                <div class="benefits-chart">
+                    <h2>Membership Benefits</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Benefit</th>
+                                <th>NP Membership</th>
+                                <th>Bronze Membership</th>
+                                <th>Silver Membership</th>
+                                <th>🌟Gold Membership</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Special Events</td>
+                                <td>✖</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Training</td>
+                                <td>✖</td>
+                                <td>✖</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Advertising</td>
+                                <td>✖</td>
+                                <td>✖</td>
+                                <td>✖</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Event Discounts</td>
+                                <td>✖</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                                <td>✔</td>
+                            </tr>
+                            <tr>
+                                <td>Spotlight Positions</td>
+                                <td>✖</td>
+                                <td>✖</td>
+                                <td>✖</td>
+                                <td>✔</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span>🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+    <script src="./script/getDates.js"></script>
+    <script src="../week05/script/weather.js"></script>
+</body>
+</html>

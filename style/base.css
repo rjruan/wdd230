@@ -132,8 +132,8 @@ body.dark-mode a:hover {
 /* Hamburger Menu */
 #menu {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
 }
 
 #menu::before {
@@ -243,6 +243,7 @@ picture {
     text-align: center;
 }
 
+    
 @media (max-width: 600px) {
     main {
         padding: 0.5em;
@@ -251,6 +252,10 @@ picture {
     .overlay {
         font-size: 1em;
         padding: 0.3em;
+    }
+
+    .container{
+            flex: 2;
     }
 }
 

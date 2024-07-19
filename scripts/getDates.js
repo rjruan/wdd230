@@ -24,4 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Element not found');
     }
   });
-  
+  document.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById('timestamp');
+    const now = new Date().toISOString();
+    timestampField.value = now;
+});

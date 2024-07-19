@@ -53,11 +53,29 @@ body {
 }
 
 header {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 2%;
+    background-color: rgb(255, 255, 255);
 }
+
+header img {
+    flex: 0 0 auto;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    left: 20%;
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
 
 nav ul {
     display: flex;
@@ -164,63 +182,128 @@ p {
         text-align: center;
     }
 }
-/* directory */
-/* Add this to your base.css or larger.css file */
 
-#directory {
-    display: grid;
-    gap: 1rem;
+/* join */
+main {
+    padding: 0 2%;
+    min-height: 20rem;
 }
+/* form style */
 
-#directory.grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.container fieldset {
+    margin: 2rem 0;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: .5rem 2%;
 }
-
-#directory.list {
-    grid-template-columns: 1fr;
+.container {
+    color: #445ba9;
+    padding: 0 .5rem;
 }
-
-.member {
-    border: 1px solid #ddd;
+.container label {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+}
+.container div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+.container input[type="text"],
+.container input[type="tel"],
+.container input[type="email"],
+.container input[type="url"],
+.container input[type="date"],
+.container select,
+.container textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+.container input[type="radio"],
+.container input[type="checkbox"] {
+    margin-right: 6px;
+}
+.container input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#0d2892aa, #020038cb);
+    color: #fff;
+    border-radius: 6px;
     padding: 1rem;
-    background-color: #fff;
-    border-radius: 5px;
+    width: 75%;
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 1px 1px 4px #999;
+}
+.container input:required {
+    border-left: solid 8px red;
+}
+.container input:required:valid {
+    border-left: solid 8px green;
+}
+/* benefit chart */
+.benefits-chart {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.benefits-chart h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #444;
+}
+
+.benefits-chart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.benefits-chart th,
+.benefits-chart td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
     text-align: center;
 }
 
-.member img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.benefits-chart th {
+    background-color: #e6e6e6;
+    color: #333;
 }
 
-.member h2 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+.benefits-chart td {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
 }
 
-.member p, .member a {
-    margin: 0.2rem 0;
+.benefits-chart td:first-child {
+    text-align: left;
 }
-/* Sidebar layout */
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
+aside{
+    width: 50%;
 }
 
-aside {
-    background-color: #f9f9f9;
-    padding: 1rem;
-}
+/* Positioning the benefits chart to the right in larger views */
+@media screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 1rem;
+    }
 
-.gallery {
-    padding: 1rem;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+    .benefits-chart {
+        grid-column: 2 / 3;
+    }
 }
 
 
