@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Directory - Taiwan Chamber of Commerce</title>
-    <meta name="description" content="Directory of members for the Taiwan Chamber of Commerce.">
-    <meta name="author" content="Ruby Ruan">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25|Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/base.css">
+    <title>Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover the Chamber of Commerce. Engage with the community and explore the area.">
+    <meta name="author" content="Ruby Ruan">
+    <meta property="og:title" content="Chamber of Commerce - Discover">
+    <meta property="og:description" content="Explore the Chamber of Commerce in Taipei, Taiwan descover.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://rjruan.github.io/wdd230/chamber/discover.html">
+    <link rel="icon" href="./images/favicon (1).ico">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/normal.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
+    <link href="./data/members.json">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="images/8690157.jpg" alt="Ruby Ruan" class="profile-picture" width="100" height="100">
-            <h1>Ruby Ruan</h1>
-        </div>
-        <button id="dark-mode-toggle">Dark Mode</button>
-        <button id="hamburger-toggle" class="hamburger">&#9776;</button>
+        <img src="./images/chamberlogo.png" alt="Chamber of Commerce Logo" width="364" height="205">
+        <h1>Chamber of Commerce</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/chamber/index.html">Chamber</a></li>
-            <li><a href="/chamber/siteplan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../chamber/discover.html">Discover</a></li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
+            <li><a href="./join.html">Join Us</a></li>
+            <li><a href="../chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Directory of Members</h1>
-        <button id="toggleView">Toggle View</button>
-        <div id="directory"></div>
+        <div class="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <section id="directory-container" class="grid-view">
+            <!-- Directory members will be inserted here by JavaScript -->
+        </section>
     </main>
     <footer>
-        <p>&copy;<span id="year"></span> Ruby Ruan Taiwan</p>
+        <p>&copy;<span id="year"></span>🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
         <p id="lastModified">Last Modified</p>
     </footer>
-    <script src="/scripts/getDates.js"></script>
-    <script src="/scripts/hamburger.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="/chamber/data/members.js"></script>
+    <script src="./script/getDates.js"></script>
+    <script src="../week05/script/weather.js"></script>
+    <script src="./script/visitmessage.js"></script>
+    <script src="./script/lazyload.js"></script>
 </body>
 </html>

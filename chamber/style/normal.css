@@ -289,8 +289,44 @@ main {
 .benefits-chart td:first-child {
     text-align: left;
 }
-aside{
-    /* width: 50%; */
+
+#directory-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.grid-view .member-card {
+    width: calc(33.333% - 1em); /* Adjust to fit 3 cards per row */
+    box-sizing: border-box;
+}
+
+.list-view .member-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: #fff;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.member-card h2 {
+    margin-top: 0;
+}
+
+.view-toggle {
+    margin-bottom: 1em;
 }
 
 /* Positioning the benefits chart to the right in larger views */

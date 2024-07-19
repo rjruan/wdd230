@@ -1,13 +1,13 @@
 const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("r");
-
-// RANGE event listener
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
+const range = document.getElementById("rating");
 
 function displayRatingValue() {
     rangevalue.innerHTML = range.value;
 }
+
+range.addEventListener('input', displayRatingValue);
+range.addEventListener('change', displayRatingValue);
+
 const kp1 = document.querySelector("#keyphrase");
 const kp2 = document.querySelector("#keyphrase2");
 const message = document.querySelector("#formmessage");
