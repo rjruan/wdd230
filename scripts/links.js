@@ -1,33 +1,50 @@
-const baseURL = "https://rjruan.github.io/wdd230/";
+const baseURL = 'https://rjruan.github.io/wdd230/'; // Update with your GitHub Pages URL
 const linksURL = `${baseURL}data/links.json`;
+console.log('links.js loaded');
+
+console.log('links.js loaded'); // Check if the script is loaded
 
 async function getLinks() {
-  const response = await fetch(linksURL);
-  const data = await response.json();
-  displayLinks(data.weeks);
+    try {
+        const response = await fetch(linksURL);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Data fetched:', data); // Check if data is fetched
+        displayLinks(data);
+    } catch (error) {
+        console.error('Error fetching links:', error);
+    }
 }
 
 function displayLinks(weeks) {
-  const activitiesDiv = document.getElementById('activities');
-  weeks.forEach(week => {
-    let weekSection = document.createElement('section');
-    let weekTitle = document.createElement('h3');
-    weekTitle.textContent = week.week;
-    weekSection.appendChild(weekTitle);
+    const linkMenu = document.getElementById('link-menu');
+    if (!linkMenu) {
+        console.error('link-menu element not found');
+        return;
+    }
+    linkMenu.innerHTML = ''; // Clear existing content
 
-    let ul = document.createElement('ul');
-    week.links.forEach(link => {
-      let li = document.createElement('li');
-      let a = document.createElement('a');
-      a.href = `${baseURL}${link.url}`;
-      a.textContent = link.title;
-      li.appendChild(a);
-      ul.appendChild(li);
+    weeks.forEach(week => {
+        const weekItem = document.createElement('li');
+        weekItem.textContent = `${week.week}: `;
+
+        week.links.forEach((link, index) => {
+            const anchor = document.createElement('a');
+            anchor.href = link.url;
+            anchor.textContent = link.title;
+
+            weekItem.appendChild(anchor);
+
+            if (index < week.links.length - 1) {
+                const separator = document.createTextNode(' | ');
+                weekItem.appendChild(separator);
+            }
+        });
+
+        linkMenu.appendChild(weekItem);
     });
-
-    weekSection.appendChild(ul);
-    activitiesDiv.appendChild(weekSection);
-  });
 }
 
 getLinks();
