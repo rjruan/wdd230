@@ -1,43 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const gridButton = document.getElementById('grid-view');
-    const listButton = document.getElementById('list-view');
-    const directoryContainer = document.getElementById('directory-container');
+    const directoryElement = document.getElementById('directory');
+    const gridViewButton = document.getElementById('grid-view');
+    const listViewButton = document.getElementById('list-view');
 
-    function fetchMembers() {
-        fetch('../data/members.json')
-            .then(response => response.json())
-            .then(data => {
-                renderMembers(data);
-            })
-            .catch(error => console.error('Error fetching members:', error));
-    }
+    fetch('./data/members.json')
+        .then(response => response.json())
+        .then(data => displayMembers(data))
+        .catch(error => console.error('Error fetching JSON:', error));
 
-    function renderMembers(members) {
-        directoryContainer.innerHTML = ''; // Clear existing content
+    gridViewButton.addEventListener('click', () => {
+        directoryElement.classList.add('grid-view');
+        directoryElement.classList.remove('list-view');
+    });
+
+    listViewButton.addEventListener('click', () => {
+        directoryElement.classList.add('list-view');
+        directoryElement.classList.remove('grid-view');
+    });
+
+    function displayMembers(members) {
+        directoryElement.innerHTML = '';
         members.forEach(member => {
-            const memberCard = document.createElement('div');
-            memberCard.className = 'member-card';
+            const memberElement = document.createElement('div');
+            memberElement.classList.add('member-card');
 
-            memberCard.innerHTML = `
-                <img src="../images/${member.image}" alt="${member.name}">
-                <h2>${member.name}</h2>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">Website</a>
-                <p>Membership Level: ${member.membershipLevel}</p>
-                <p>${member.additionalInfo}</p>
+            memberElement.innerHTML = `
+                <img src="./images/${member.image}" alt="${member.name}" width="100" height="100">
+                <h3>${member.name}</h3>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p><strong>Membership Level:</strong> ${member.membership_level}</p>
+                <p>${member.description}</p>
             `;
 
-            directoryContainer.appendChild(memberCard);
+            directoryElement.appendChild(memberElement);
         });
     }
-
-    function toggleView(view) {
-        directoryContainer.className = view;
-    }
-
-    gridButton.addEventListener('click', () => toggleView('grid-view'));
-    listButton.addEventListener('click', () => toggleView('list-view'));
-
-    fetchMembers(); // Fetch members on page load
 });

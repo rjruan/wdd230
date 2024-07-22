@@ -4,7 +4,7 @@
       "address": "No. 123, Sec. 1, Zhongxiao E. Rd., Da’an Dist., Taipei City 106",
       "phone": "02-1234-5678",
       "website": "http://www.taipeibusiness.com",
-      "image": "taipei_business.jpg",
+      "image": "../images/talk.jpg",
       "membership_level": "Gold",
       "description": "Leading business consultancy in Taipei."
     },
@@ -13,7 +13,7 @@
       "address": "No. 456, Zhongshan 2nd Rd., Qianzhen Dist., Kaohsiung City 806",
       "phone": "07-2345-6789",
       "website": "http://www.kaohsiunghub.com",
-      "image": "kaohsiung_tech.jpg",
+      "image": "../images//tech.jpg",
       "membership_level": "Silver",
       "description": "Innovative tech solutions provider."
     },
@@ -22,7 +22,7 @@
       "address": "No. 789, Sec. 2, Yongkang Rd., Yongkang Dist., Tainan City 710",
       "phone": "06-3456-7890",
       "website": "http://www.tainansuppliers.com",
-      "image": "tainan_food.jpg",
+      "image": "../images/food.jpg",
       "membership_level": "Bronze",
       "description": "Wholesale food suppliers for local businesses."
     },
@@ -31,7 +31,7 @@
       "address": "No. 321, Sec. 3, Taiwan Blvd., Xitun Dist., Taichung City 407",
       "phone": "04-4567-8901",
       "website": "http://www.taichungstudio.com",
-      "image": "taichung_creative.jpg",
+      "image": "../images/studio.jpg",
       "membership_level": "Gold",
       "description": "Creative design and marketing services."
     },
@@ -40,7 +40,7 @@
       "address": "No. 654, Guangfu Rd., East Dist., Hsinchu City 300",
       "phone": "03-5678-9012",
       "website": "http://www.hsinchuscience.com",
-      "image": "hsinchu_science.jpg",
+      "image": "../images/science.jpg",
       "membership_level": "Silver",
       "description": "Science and technology park offering R&D facilities."
     },
@@ -49,7 +49,7 @@
       "address": "No. 987, Sec. 4, Zhonghua Rd., Yilan City, Yilan County 260",
       "phone": "03-6789-0123",
       "website": "http://www.yilanorganic.com",
-      "image": "yilan_organic.jpg",
+      "image": "../images/farm.jpg",
       "membership_level": "Bronze",
       "description": "Organic farms providing fresh produce."
     },
@@ -58,7 +58,7 @@
       "address": "No. 258, Zhongshan Rd., Hualien City, Hualien County 970",
       "phone": "03-7890-1234",
       "website": "http://www.hualienadventure.com",
-      "image": "hualien_adventure.jpg",
+      "image": "../images/river.jpg",
       "membership_level": "Gold",
       "description": "Adventure tours and outdoor activities."
     }

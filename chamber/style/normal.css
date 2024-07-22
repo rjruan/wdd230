@@ -188,6 +188,14 @@ main {
     padding: 0 2%;
     min-height: 20rem;
 }
+.join-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
 /* form style */
 
 .container fieldset {
@@ -203,7 +211,7 @@ main {
 .container label {
     display: block;
     padding-top: 1rem;
-    color: black;
+    color: #445ba9;
     font-size: .9rem;
 }
 .container div {
@@ -254,7 +262,7 @@ main {
     margin: 2rem;
     padding: 1rem;
     background-color: #f4f4f4;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 6px;
 }
 
@@ -290,43 +298,68 @@ main {
     text-align: left;
 }
 
-#directory-container {
+/* directory */
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    justify-content: center;
 }
 
-.grid-view .member-card {
-    width: calc(33.333% - 1em); /* Adjust to fit 3 cards per row */
-    box-sizing: border-box;
+nav ul li {
+    margin: 0 10px;
 }
 
-.list-view .member-card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
-}
-
-.member-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    background-color: #fff;
-}
-
-.member-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.member-card h2 {
-    margin-top: 0;
+main {
+    padding: 20px;
 }
 
 .view-toggle {
-    margin-bottom: 1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.grid-view .member-card {
+    display: inline-block;
+    width: calc(33% - 20px);
+    margin: 10px;
+}
+
+.list-view .member-card {
+    display: block;
+    width: 100%;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .grid-view .member-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-view .member-card {
+        width: 100%;
+    }
 }
 
 /* Positioning the benefits chart to the right in larger views */

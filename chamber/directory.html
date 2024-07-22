@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Discover</title>
+    <title>Chamber of Commerce - Directory</title>
     <meta name="description" content="Discover the Chamber of Commerce. Engage with the community and explore the area.">
     <meta name="author" content="Ruby Ruan">
-    <meta property="og:title" content="Chamber of Commerce - Discover">
-    <meta property="og:description" content="Explore the Chamber of Commerce in Taipei, Taiwan descover.">
+    <meta property="og:title" content="Chamber of Commerce - Directory">
+    <meta property="og:description" content="Explore the Chamber of Commerce in Taipei, Taiwan.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <meta property="og:url" content="https://rjruan.github.io/wdd230/chamber/discover.html">
+    <meta property="og:url" content="https://rjruan.github.io/wdd230/chamber/directory.html">
     <link rel="icon" href="./images/favicon (1).ico">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/normal.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
-    <link href="./data/members.json">
 </head>
 <body>
     <header>
@@ -36,9 +35,7 @@
             <button id="grid-view">Grid View</button>
             <button id="list-view">List View</button>
         </div>
-        <section id="directory-container" class="grid-view">
-            <!-- Directory members will be inserted here by JavaScript -->
-        </section>
+        <div id="directory" class="list-view"></div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span>🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
@@ -48,5 +45,6 @@
     <script src="../week05/script/weather.js"></script>
     <script src="./script/visitmessage.js"></script>
     <script src="./script/lazyload.js"></script>
+    <script src="./script/directory.js"></script>
 </body>
 </html>

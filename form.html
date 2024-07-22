@@ -6,13 +6,14 @@
     <title>Ruby Ruan - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan. This portal serves as a hub for learning activities, information, and updates related to the course.">
     <meta name="author" content="Ruby Ruan">
-    <meta property="og:title" content="Ruby Ruan - WDD 230 - Web Frontend Development">
+    <meta property="og:title" content="Ruby Ruan - WDD 230 - Web Frontend Development contact form">
     <meta property="og:description" content="WDD 230 - Web Frontend Development course assignment portal by Ruby Ruan.">
     <meta property="og:image" content="https://newsroom.churchofjesuschrist.org/media/960x540/Exterior_0726.jpg">
     <meta property="og:url" content="https://rjruan.github.io/wdd230">
     <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/form.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style/larger.css">
     <link rel="manifest" href="./data/manifest.json">
     <link rel="icon" href="./week02/favicon.ico">
@@ -34,7 +35,7 @@
             <a href="./images/wirefram.jpg" title="Site Plan">Site Plan</a>
             <a href="./form.html" title="form">Form</a>
             <a href="./chamber/discover.html" title="About Us" class="us">About Us</a>
-          </nav>
+        </nav>
     </nav>
     <main>
         <header></header>
@@ -50,16 +51,15 @@
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone">
             <label for="keyphrase">Your Key Phrase</label>
-            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
+            <input type="password" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
             <label for="keyphrase2">Re-enter Your Key Phrase</label>
-            <input type="text" id="keyphrase2" name="keyphrase2">
+            <input type="password" id="keyphrase2" name="keyphrase2">
     
             <label for="comments" class="req">Your Message</label>
             <textarea id="comments" name="comments" required></textarea>
             <button id="btnSubmit" type="submit">Send Message</button>
             <input type="hidden" value="43aster">
         </form>
-        <footer></footer>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> 🪿 Ruby Ruan 🪿 Taiwan 🇹🇼</p>
