@@ -227,21 +227,93 @@ picture {
     
 }
 
-.learning-activities, .information, .map {
-    margin-top: 2em;
-    border: 1px solid #ccc;
-    padding: 1em;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-.learning-activities h3, .information h3 {
-    color: #004080;
-}
-
-.information {
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
     text-align: center;
 }
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+/* activities */
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+#activities {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#link-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+#link-menu li {
+    margin-bottom: 1rem;
+}
+
+#link-menu strong {
+    font-weight: bold;
+}
+
+#link-menu a {
+    color: #004080;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+#link-menu a:hover {
+    text-decoration: underline;
+}
+
+#link-menu a::after {
+    content: '|';
+    margin-left: 5px;
+}
+
+#link-menu a:last-of-type::after {
+    content: '';
+}
+
 
     
 @media (max-width: 600px) {

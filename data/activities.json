@@ -1,0 +1,48 @@
+[
+  {
+    "week": "Week 1",
+    "links": [
+      {"url": "../week01/holygrail.html", "title": "holygrail"},
+      {"url": "https://codepen.io/rjruan/pen/KKjMWzy", "title": "Applied JavaScript"},
+      {"url": "../week01/media-query.html", "title": "Media Query"}
+    ]
+  },
+  {
+    "week": "Week 2",
+    "links": [
+      {"url": "../week02/design.html", "title": "Design Principle"},
+      {"url": "../week02/bom.html", "title": "bom"}
+    ]
+  },
+  {
+    "week": "Week 3",
+    "links": [
+      {"url": "../Week03/images/pexels-pixabay-158316 (2).webp", "title": "Webp Image"},
+      {"url": "../Week03/responsive-images.html", "title": "Responsive Image"}
+    ]
+  },
+  {
+    "week": "Week 4",
+    "links": [
+      {"url": "https://codepen.io/rjruan/pen/dyBXvRP", "title": "CSS Pseudo-Classes"},
+      {"url": "../week04/images/Screenshot 2024-07-16 at 21.42.07.png", "title": "CSS Combinators"},
+      {"url": "../week04/tablebuild.html", "title": "Tablebuild"},
+      {"url": "../week04/index.html", "title": "the form"}
+    ]
+  },
+  {
+    "week": "Week 5",
+    "links": [
+      {"url": "https://codepen.io/rjruan/pen/gONMmyx", "title": "CSS Pseudo-elements"},
+      {"url": "../week05/script/new-ward-members.json", "title": "New ward member"},
+      {"url": "../week05/prophet.html", "title": "The fetch API"},
+      {"url": "../week05/weather.html", "title": "weather API"}
+    ]
+  },
+  {
+    "week": "Week 6",
+    "links": [
+      {"url": "../chamber/index.html", "title": "The Chamber Home Page Enhancements"}
+    ]
+  }
+]
